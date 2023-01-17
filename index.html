@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meme maker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <canvas></canvas>
+      <div id="colors">
+        <div
+          class="color"
+          style="background-color: #e74c3c"
+          data-color="#e74c3c"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #e67e22"
+          data-color="#e67e22"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #27ae60"
+          data-color="#27ae60"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #3498db"
+          data-color="#3498db"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #34495e"
+          data-color="#34495e"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #d35400"
+          data-color="#d35400"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #f1c40f"
+          data-color="#f1c40f"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #1abc9c"
+          data-color="#1abc9c"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #8e44ad"
+          data-color="#8e44ad"
+        ></div>
+        <div
+          class="color"
+          style="background-color: #95a5a6"
+          data-color="#95a5a6"
+        ></div>
+      </div>
+    </div>
+    <div class="box">
+      <button id="drawModeBtn">pencil mode</button>
+      <div class="box2">
+        <input
+          type="range"
+          id="pickThick"
+          min="0"
+          max="10"
+          step="0.1"
+          value="3"
+        />
+        <input type="color" id="pickColor" />
+      </div>
+
+      <button id="eraser">eraser</button>
+      <button id="refresh">refresh</button>
+      <span id="guideline"> ⌨️ Canvas double click = can add TEXT</span>
+      <select id="fontSizeSelect">
+        <option value="">텍스트 크기</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">20</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+      </select>
+      <form id="textForm">
+        <input type="text" id="textInput" placeholder="텍스트 입력 후 엔터" />
+      </form>
+
+      <label for="loadImg"
+        >🏞 Image Upload
+        <input type="file" id="loadImg" accept="image/*" />
+      </label>
+      <button id="saveBtn">save your image</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
